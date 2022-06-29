@@ -1,1 +1,1 @@
-# EN813701 Web Apllication Development
+# EN813701 Web Application Development
