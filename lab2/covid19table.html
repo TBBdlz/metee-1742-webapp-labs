@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 table demo</title>
+  </head>
+  <body>
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        border-spacing: 2px;
+        padding: 30px;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        margin: 0 auto;
+      }
+      .header-cell {
+        background-color: bisque;
+      }
+
+      .new-recovered-cell {
+        background-color: chartreuse;
+      }
+
+      .new-cases-cell {
+        background-color: yellow;
+      }
+
+      .new-deaths-cell {
+        background-color: red;
+        color: white;
+      }
+
+      .even-row-cell {
+        background-color: aqua;
+      }
+    </style>
+    <div class="container">
+      <h1 style="text-align: center">Reported Cases and Deaths by Country</h1>
+      <table>
+        <tr>
+          <th class="header-cell">Country</th>
+          <th class="header-cell">Total Cases</th>
+          <th class="header-cell">New Cases</th>
+          <th class="header-cell">Total Deaths</th>
+          <th class="header-cell">New Deaths</th>
+          <th class="header-cell">Total Recovered</th>
+          <th class="header-cell">New Recovered</th>
+          <th class="header-cell">Active Cases</th>
+        </tr>
+        <tr>
+          <td class="even-row-cell">USA</td>
+          <td class="even-row-cell">35,353,923</td>
+          <td class="new-cases-cell">+61,581</td>
+          <td class="even-row-cell">627,351</td>
+          <td class="new-deaths-cell">+339</td>
+          <td class="even-row-cell">29,571,434</td>
+          <td class="new-recovered-cell">+22,966</td>
+          <td class="even-row-cell">5,155,138</td>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>35,353,923</td>
+          <td class="new-cases-cell">+61,581</td>
+          <td>627,351</td>
+          <td class="new-deaths-cell">+339</td>
+          <td>29,571,434</td>
+          <td class="new-recovered-cell">+22,966</td>
+          <td>5,155,138</td>
+        </tr>
+        <tr>
+          <td class="even-row-cell">USA</td>
+          <td class="even-row-cell">35,353,923</td>
+          <td class="new-cases-cell">+61,581</td>
+          <td class="even-row-cell">627,351</td>
+          <td class="new-deaths-cell">+339</td>
+          <td class="even-row-cell">29,571,434</td>
+          <td class="new-recovered-cell">+22,966</td>
+          <td class="even-row-cell">5,155,138</td>
+        </tr>
+        <tr>
+          <td>USA</td>
+          <td>35,353,923</td>
+          <td class="new-cases-cell">+61,581</td>
+          <td>627,351</td>
+          <td class="new-deaths-cell">+339</td>
+          <td>29,571,434</td>
+          <td class="new-recovered-cell">+22,966</td>
+          <td>5,155,138</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
