@@ -21,12 +21,13 @@
       tr:nth-child(even) {
         background-color: aqua;
       }
+
+      tr#header {
+        background-color: bisque;
+      }
       .container {
         display: grid;
         margin: 0 auto;
-      }
-      .header-cell {
-        background-color: bisque;
       }
 
       .new-recovered-cell {
@@ -45,15 +46,15 @@
     <div class="container">
       <h1 style="text-align: center">Reported Cases and Deaths by Country</h1>
       <table>
-        <tr>
-          <th class="header-cell">Country</th>
-          <th class="header-cell">Total Cases</th>
-          <th class="header-cell">New Cases</th>
-          <th class="header-cell">Total Deaths</th>
-          <th class="header-cell">New Deaths</th>
-          <th class="header-cell">Total Recovered</th>
-          <th class="header-cell">New Recovered</th>
-          <th class="header-cell">Active Cases</th>
+        <tr id="header">
+          <th>Country</th>
+          <th>Total Cases</th>
+          <th>New Cases</th>
+          <th>Total Deaths</th>
+          <th>New Deaths</th>
+          <th>Total Recovered</th>
+          <th>New Recovered</th>
+          <th>Active Cases</th>
         </tr>
         <tr>
           <td>USA</td>
