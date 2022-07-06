@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Demo</title>
+  </head>
+  <body>
+    <style>
+      nav {
+        display: flex;
+        background-color: dimgray;
+      }
+
+      #ul-link {
+        background-color: darkmagenta;
+        padding: 10px;
+        margin-right: 0;
+        position: sticky;
+      }
+
+      #ul-link:link,
+      #ul-link:hover,
+      #ul-link:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      #ol-link {
+        padding: 10px;
+        margin-left: 0;
+      }
+
+      #ol-link:link,
+      #ol-link:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      #ol-link:hover {
+        background-color: yellow;
+        color: black;
+        text-decoration: none;
+      }
+
+      #box {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+      }
+
+      #ul-list {
+        padding-left: 10px;
+        border: 1px solid black;
+      }
+
+      #ol-list {
+        padding-left: 10px;
+        border: 1px solid black;
+      }
+
+      #border-blue {
+        display: inline-block;
+        padding: 4px;
+        border: 4px solid blue;
+        background-color: aliceblue;
+      }
+
+      #border-green {
+        display: inline-block;
+        padding: 4px;
+        border: 4px solid green;
+        background-color: bisque;
+      }
+    </style>
+    <nav>
+      <a href="#" id="ul-link">Unordered List</a>
+      <a href="#" id="ol-link">Ordered List</a>
+    </nav>
+    <h2 id="border-blue" style="margin-left: 20px">This is unordered list</h2>
+    <ul type="circle">
+      <li>Coffee</li>
+      <li>Green Tea</li>
+      <li>Strawberrymilk</li>
+    </ul>
+    <h2 id="border-green" style="margin-left: 20px">This is ordered list</h2>
+    <ol type="i">
+      <li>Coffee</li>
+      <li>Green Tea</li>
+      <li>Strawberrymilk</li>
+    </ol>
+  </body>
+</html>
