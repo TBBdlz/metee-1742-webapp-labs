@@ -2,5 +2,5 @@
 
 ## Problem 1
 
-* [tbbdlz.github.io](https://tbbdlz.github.io/profile/)
+* [tbbdlz.github.io](https://tbbdlz.github.io/)
 * [tbbdlz.github.io/covid](https://tbbdlz.github.io/covid/)
