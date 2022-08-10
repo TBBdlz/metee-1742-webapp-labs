@@ -1,13 +1,9 @@
-const isFloat = n => {
-    return Number(n) === n && n % 1 !== 0;
-};
-
 const getUserInput = () => {
-	let number;
+	let input_num;
 	do {
-		number = prompt("Enter any integer:");
-	} while (isNaN(number) || isFloat(Number(number)))
-	return number;
+		input_num = Number(prompt("Enter any integer:", "0"), 0);
+	} while (input_num && Number.isInteger(input_num));
+	return input_num;
 };
 
 const divideByTwo = n => n / 2;
