@@ -1,9 +1,15 @@
 const catPic = document.getElementById("cat-pic");
-const onCatClick = (e) => {
+let isClick = false;
+const onCatClick = (event) => {
 	const stashePic = document.getElementById("mustache-pic");
 	// adjust for the offset of the cat mustache
-	stashePic.style.top = "140px";
-	stashePic.style.left = "115px";
+	if (isClick !== true) {
+		const x = event.offsetX - stashePic.width / 2;
+		const y = event.offsetY - stashePic.height / 2;
+		stashePic.style.top = `${y}px`;
+		stashePic.style.left = `${x}px`;
+		isClick = true;
+	}
 };
 
 catPic.addEventListener("click", onCatClick);
