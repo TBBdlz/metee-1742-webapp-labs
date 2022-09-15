@@ -3,7 +3,7 @@ let isClick = false;
 const onCatClick = (event) => {
 	const stashePic = document.getElementById("mustache-pic");
 	// adjust for the offset of the cat mustache
-	if (isClick !== true) {
+	if (!isClick) {
 		const x = event.offsetX - stashePic.width / 2;
 		const y = event.offsetY - stashePic.height / 2;
 		stashePic.style.top = `${y}px`;
